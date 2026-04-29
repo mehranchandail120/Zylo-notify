@@ -1,0 +1,9 @@
+{
+  "name": "zylo-notify-backend",
+  "version": "1.0.0",
+  "description": "Zylo push notification backend via OneSignal",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
