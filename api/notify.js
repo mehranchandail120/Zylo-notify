@@ -16,7 +16,9 @@ export default async function handler(req, res) {
 
   const payload = {
     app_id: process.env.ONESIGNAL_APP_ID,
-    include_player_ids: playerIds,
+
+    // ✅ NEW: include_subscription_ids (replaces deprecated include_player_ids)
+    include_subscription_ids: playerIds,
 
     // ── Title & body ──────────────────────────────────────────────────────────
     headings: { en: title || 'Zylo' },
